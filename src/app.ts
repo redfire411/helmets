@@ -298,8 +298,7 @@ export default class WearAHat {
         }
 
         // If the user is wearing a hat, destroy it.
-        if (this.attachedHats.has(userId)) this.attachedHats.get(userId).destroy();
-        this.attachedHats.delete(userId);
+        
 
         const hatRecord = this.HatDatabase[hatId];
 
