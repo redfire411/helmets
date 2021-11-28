@@ -106,8 +106,8 @@ export default class WearAHat {
                 // defaults include actions like Clear, Move Up/Down, and Size Up/Down
                 // e.g. ws://10.0.1.89:3901?kit=city_helmets
                 switch(this.params.kit) {
-                    case "city_helmets": {
-                        this.HatDatabase = Object.assign({}, require('../public/data/1167643861778956427_city_helmets.json'), require(this.controls));
+                    case "vatoman": {
+                        this.HatDatabase = Object.assign({}, require('../public/data/vatoman.json'), require(this.controls));
                         break;
                     }
                     case "space_helmets": {
@@ -298,9 +298,12 @@ export default class WearAHat {
         }
 
         // If the user is wearing a hat, destroy it.
-        
+        if (this.attachedHats.has(userId)) this.attachedHats.get(userId).destroy();
+        this.attachedHats.delete(userId);
 
         const hatRecord = this.HatDatabase[hatId];
+
+        
 
         // Create the hat model and attach it to the avatar's head.
         // Jimmy

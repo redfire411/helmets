@@ -1,0 +1,31 @@
+{
+   "vatoman": {
+    "scale": {
+      "x": 2.2,
+      "y": 2,
+      "z": 2.6
+    },
+    "position": {
+      "x": 0,
+      "y": -0.2,
+      "z": -0.03
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "menuScale": {
+      "x": 4,
+      "y": 4,
+      "z": 4
+    },
+    "resourceId": "artifact:1872963770838418281",
+    "attachPoint": "spine-bottom",
+    "menuRotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  }
+}
